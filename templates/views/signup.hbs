@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div>
+        <h3 class="signup-heading">Signup Form</h3>
+        <form action="/signup" method="POST">
+         <div class="sign-form">
+
+             <div class="col">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="First Name *" value="" name="firstname"/>
+              </div>
+               <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Your Email *" value="" name="email"/>
+              </div>
+               <div class="form-group">
+                  <input type="text" class="form-control" minlength="10" maxlength="10" placeholder="Your Phone Number *" value="" name="firstname"/>
+              </div>
+
+               <div class="form-group">
+                  <input type="password" class="form-control"  placeholder="Password *" value="" name="password"/>
+              </div>
+           </div>
+
+
+
+             <div class="col">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Last Name *" value="" name="lastname"/>
+              </div>
+               <div class="form-group">
+                  <div class="radio-btn">
+                      <label class="radio-cls">
+                         <input type="radio" name="gender" value="male">
+                         <span>Male</span>
+                      </label>
+                        <label class="radio-cls">
+                         <input type="radio" name="gender" value="female">
+                         <span>Female</span>
+                      </label>
+                  </div>
+              </div>
+              
+               <div class="form-group">
+                  <input type="text" class="form-control"  placeholder="Enter your age" value="" name="age"/>
+              </div>
+
+              <div class="form-group">
+                  <input type="password" class="form-control"  placeholder="Confirm Password *" value="" name="confirmpassword"/>
+              </div>
+
+              <input type="submit" class="btnsubmit" value="submit"/>
+              
+           </div>
+           
+         </div>  
+        </form>
+    </div>
+
+</body>
+</html>

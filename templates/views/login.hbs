@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>navbar}}
+    <div class="container">
+        <form action="/login" method="POST">
+            <input type="text" class="form-control" placeholder="Email" required name="email">
+            <input type="password" class="form-control" placeholder="Password" required name="password">
+            <button class="btn" type="submit">Sign in</button>      
+            <label class="checkbox">
+                <input type="checkbox" value="remember me"/>Remember me
+            </label>  
+            <a href="#" class="pull" >Need help?</a>
+        </form>
+        <a href="/signup" class="new-account">Create an account</a>
+    </div>
+
+</body>
+</html>
